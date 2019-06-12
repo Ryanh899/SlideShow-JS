@@ -33,7 +33,7 @@ function nextImage() {
   count++ ; 
 
   // TODO: Show the loading gif in the "image-holder" div.
-$('#image-holder').append(images[2])
+$('#image-holder').html("<img src=" + images[2] + " width='400px'>")
 
   // TODO: Use a setTimeout to run displayImage after 1 second.
 setTimeout(displayImage, 1000)
@@ -49,7 +49,7 @@ function startSlideshow() {
  
   showImage = setInterval(function(){
     nextImage()
-  }, 1000)
+  }, 2000)
   
 }
 function stopSlideshow() {
